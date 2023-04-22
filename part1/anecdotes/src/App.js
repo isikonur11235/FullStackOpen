@@ -16,7 +16,7 @@ const App = () => {
 
    
   const [selected, setSelected] = useState(0)
-  const [points, setPoinst] = useState([0,0,0,0,0,0,0,0])
+  const [points, setPoints] = useState([0,0,0,0,0,0,0,0])
 
   const handleClick=()=>{
 
@@ -29,10 +29,8 @@ const App = () => {
 
     const copy = [...points]
     copy[selected] += 1
-
-    setPoinst(copy)
-    
-    
+    setPoints(copy)
+    console.log(points)
   }
 
   return (
